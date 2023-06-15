@@ -157,7 +157,7 @@ function App() {
             <h1 style={{ textAlign: "center", marginTop: "25px" }}>Profile Card Generator</h1>
             <form>
               <Grid container spacing={2}>
-                <Grid item lg={6} >
+                <Grid item lg={6} sm={6} >
                   <FormInput label="Name"
                     type="text"
                     name="name"
@@ -166,7 +166,7 @@ function App() {
                     onChange={onChangeHandler}
                   />
                 </Grid>
-                <Grid item lg={6} >
+                <Grid item lg={6} sm={6} >
                   <FormInput label="Email"
                     type="email"
                     name="email"
@@ -178,7 +178,7 @@ function App() {
               </Grid>
 
               <Grid container spacing={2}>
-                <Grid item lg={6} >
+                <Grid item lg={6} sm={6} >
                   <FormInput label="Password"
                     type="password"
                     name="password"
@@ -187,7 +187,7 @@ function App() {
                     errorMessage={error.password ? error.password : null}
                   />
                 </Grid>
-                <Grid item lg={6} >
+                <Grid item lg={6} sm={6} >
                   <FormInput label="Confirm Password"
                     type="password"
                     name="confirmPassword"
@@ -199,7 +199,7 @@ function App() {
               </Grid>
 
               <Grid container spacing={2}>
-                <Grid item lg={6} >
+                <Grid item lg={6} sm={6} >
                   <FormInput label="Phone"
                     type="number"
                     name="number"
@@ -208,7 +208,7 @@ function App() {
                     errorMessage={error.number ? error.number : null}
                   />
                 </Grid>
-                <Grid item lg={6} >
+                <Grid item lg={6} sm={6} >
                   <div className='radios'>
                     <div className='radio'>
                       <input
@@ -234,7 +234,7 @@ function App() {
               </Grid>
 
               <Grid container spacing={2}>
-                <Grid item lg={6} >
+                <Grid item lg={6} sm={6} >
                   <FormInput label=""
                     type="date"
                     name="date"
@@ -243,7 +243,7 @@ function App() {
                     errorMessage={error.date ? error.date : null}
                   />
                 </Grid>
-                <Grid item lg={6} >
+                <Grid item lg={6} sm={6} >
 
                   <FormInput label=""
                     type="time"
@@ -256,7 +256,7 @@ function App() {
               </Grid>
 
               <Grid container spacing={2}>
-                <Grid item lg={6} >
+                <Grid item lg={6} sm={6} >
                   <TextField
                     size="small"
                     type="file"
@@ -268,7 +268,7 @@ function App() {
                     error={error.image ? true : false}
                   />
                 </Grid>
-                <Grid item lg={6} >
+                <Grid item lg={6} sm={6} >
                   <div className='margin-top'>
                     <FormControl fullWidth>
                       <InputLabel id="demo-simple-select-label">States</InputLabel>

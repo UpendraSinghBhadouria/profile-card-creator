@@ -163,3 +163,59 @@ body{
   align-items: center;
   height: 100vh;
 }
+
+@media screen and (max-width: 1400px) {
+  .app{
+    height: 100%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .app{
+    height: 100%;
+    width: 100%;
+  }
+  .radios{
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .inputs{
+    width: 275px;
+  }
+  .radios{
+    width: 275px;
+  }
+}
+
+@media screen and (max-width: 666px) {
+  .inputs{
+    width: 231px;
+  }
+  .radios{
+    width: 231px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .inputs{
+    width: 475px;
+  }
+  .radios{
+    width: 475px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .app{
+    display: block;
+    background: none;
+  }
+  .inputs{
+    width: 270px;
+  }
+  .radios{
+    width: 270px;
+  }
+}
