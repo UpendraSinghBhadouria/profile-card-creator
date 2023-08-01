@@ -17,8 +17,8 @@ function App() {
     password: "",
     confirmPassword: "",
     number: "",
-    date: "",
-    time: "",
+    role: "",
+    linkedinAcc: "",
     gender: "",
     select: "",
     image: "",
@@ -95,11 +95,11 @@ function App() {
       errors.number = "Phone number should be in 10 digits!"
     }
 
-    if (!values.date) {
-      errors.date = "Date is required!"
+    if (!values.role) {
+      errors.role = "Role is required!"
     }
-    if (!values.time) {
-      errors.time = "Time is required!"
+    if (!values.linkedinAcc) {
+      errors.linkedinAcc = "Link is required!"
     }
     if (!values.gender) {
       errors.gender = "Gender is required!"
@@ -144,11 +144,11 @@ function App() {
         Object.keys(error).length === 0 && isSubmit ? (
           <CardData
             name={input.name}
-            date={input.date}
+            role={input.role}
             image={input.image}
             email={input.email}
             phone={input.number}
-            time={input.time}
+            linkedinAcc={input.linkedinAcc}
             state={input.select}
             gender={input.gender}
           />
@@ -235,22 +235,22 @@ function App() {
 
               <Grid container spacing={2}>
                 <Grid item lg={6} sm={6} >
-                  <FormInput label=""
-                    type="date"
-                    name="date"
-                    value={input.date}
+                  <FormInput label="Role"
+                    type="text"
+                    name="role"
+                    value={input.role}
                     onChange={onChangeHandler}
-                    errorMessage={error.date ? error.date : null}
+                    errorMessage={error.role ? error.role : null}
                   />
                 </Grid>
                 <Grid item lg={6} sm={6} >
 
-                  <FormInput label=""
-                    type="time"
-                    name="time"
-                    value={input.time}
+                  <FormInput label="Linkedin Account Link"
+                    type="link"
+                    name="linkedinAcc"
+                    value={input.linkedinAcc}
                     onChange={onChangeHandler}
-                    errorMessage={error.time ? error.time : null}
+                    errorMessage={error.linkedinAcc ? error.linkedinAcc : null}
                   />
                 </Grid>
               </Grid>
